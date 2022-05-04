@@ -1,0 +1,71 @@
+,0
+0,"                           0       1
+0      Market Cap (intraday)  23.99B
+1           Enterprise Value  24.18B
+2               Trailing P/E   53.43
+3                Forward P/E   35.09
+4  PEG Ratio (5 yr expected)    3.29
+5          Price/Sales (ttm)   12.74
+6           Price/Book (mrq)    5.35
+7   Enterprise Value/Revenue   12.68
+8    Enterprise Value/EBITDA   38.10"
+1,"                          0        1
+0         Beta (5Y Monthly)     1.26
+1          52-Week Change 3  -20.16%
+2   S&P500 52-Week Change 3   -0.22%
+3            52 Week High 3   413.89
+4             52 Week Low 3   258.00
+5   50-Day Moving Average 3   303.04
+6  200-Day Moving Average 3   351.11"
+2,"                                                 0        1
+0                              Avg Vol (3 month) 3  553.23k
+1                               Avg Vol (10 day) 3   496.8k
+2                             Shares Outstanding 5   87.03M
+3                     Implied Shares Outstanding 6      NaN
+4                                          Float 8   86.96M
+5                             % Held by Insiders 1    0.38%
+6                         % Held by Institutions 1   95.04%
+7                    Shares Short (Apr 13, 2022) 4  892.19k
+8                     Short Ratio (Apr 13, 2022) 4     1.74
+9                Short % of Float (Apr 13, 2022) 4    1.15%
+10  Short % of Shares Outstanding (Apr 13, 2022) 4    1.03%
+11       Shares Short (prior month Mar 14, 2022) 4    1.16M"
+3,"                                  0             1
+0    Forward Annual Dividend Rate 4           NaN
+1   Forward Annual Dividend Yield 4           NaN
+2   Trailing Annual Dividend Rate 3          0.00
+3  Trailing Annual Dividend Yield 3         0.00%
+4   5 Year Average Dividend Yield 4           NaN
+5                    Payout Ratio 4         0.00%
+6                   Dividend Date 3           NaN
+7                Ex-Dividend Date 4           NaN
+8               Last Split Factor 2           2:1
+9                 Last Split Date 3  Jun 04, 2007"
+4,"                           0             1
+0           Fiscal Year Ends  Dec 30, 2021
+1  Most Recent Quarter (mrq)  Dec 30, 2021"
+5,"                        0       1
+0           Profit Margin  23.84%
+1  Operating Margin (ttm)  27.24%"
+6,"                        0       1
+0  Return on Assets (ttm)   5.29%
+1  Return on Equity (ttm)  10.60%"
+7,"                                 0        1
+0                    Revenue (ttm)    1.91B
+1          Revenue Per Share (ttm)    21.89
+2   Quarterly Revenue Growth (yoy)    5.10%
+3               Gross Profit (ttm)    1.71B
+4                           EBITDA  626.18M
+5   Net Income Avi to Common (ttm)  454.63M
+6                Diluted EPS (ttm)     5.16
+7  Quarterly Earnings Growth (yoy)   -5.80%"
+8,"                            0        1
+0            Total Cash (mrq)  668.03M
+1  Total Cash Per Share (mrq)     7.66
+2            Total Debt (mrq)   880.8M
+3     Total Debt/Equity (mrq)    19.64
+4         Current Ratio (mrq)     2.11
+5  Book Value Per Share (mrq)    51.49"
+9,"                              0        1
+0     Operating Cash Flow (ttm)  549.48M
+1  Levered Free Cash Flow (ttm)  429.37M"
