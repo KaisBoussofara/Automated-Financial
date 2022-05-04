@@ -1,15 +1,13 @@
-import plost
-import streamlit as st
-import pandas as pd
 import base64
+
 import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
+import pandas as pd
+import streamlit as st
 import yfinance as yf
 
-def app() :
-    st.title('S&P 500 App')
 
+def app():
+    st.title('S&P 500 App')
 
     # Web scraping of S&P 500 data
     #

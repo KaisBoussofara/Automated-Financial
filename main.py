@@ -5,7 +5,6 @@ from urllib.request import urlopen, Request
 
 import matplotlib.pyplot as plt
 import pandas as pd
-import params as params
 import requests
 import yahoo_fin.stock_info as yf
 from bs4 import BeautifulSoup
