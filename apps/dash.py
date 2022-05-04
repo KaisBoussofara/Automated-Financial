@@ -1,19 +1,21 @@
-import numpy
-import pandas as pd
-import plotly_express as px
+import plost as plost
 import streamlit as st
-
+import pandas as pd
+import base64
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import yfinance as yf
+import plotly_express as px
+import numpy
 
 def LoadData():
     data = pd.read_csv('~/PycharmProjects/pythonProject1/04. CEG Stock Price - 5 Year Historical.csv', skiprows=1)
     return data
 
-
 def LoadData2():
-    data = pd.read_csv('~/PycharmProjects/pythonProject1/06.CEG Piotroski Score Results.csv', index_col=0, header=0)
+    data = pd.read_csv('~/PycharmProjects/pythonProject1/06.CEG Piotroski Score Results.csv',index_col=0,header=0)
     return data
-
-
 def LoadData3():
     data = pd.read_csv('~/PycharmProjects/pythonProject1/01. CEG Income Statement.csv')
 
