@@ -1,12 +1,6 @@
-import plost as plost
 import streamlit as st
-import pandas as pd
-import base64
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
 import yfinance as yf
-import plotly_express as px
+
 
 def app():
     st.title('Finance Dashbord')
