@@ -55,7 +55,7 @@ def app():
         ('CEG','ANSS','ETR','GE','HST'))
     col1,col2 = st.columns([3,1])
     col11, col12,col13 = st.columns(3)
-    Data=LoadData(f'~/PycharmProjects/pythonProject1/04. {option} Stock Price - 5 Year Historical.csv')
+    Data=LoadData(f'~/PycharmProjects/pythonProject1/04. {option} Stock Price-5 Year Historical.csv')
     df = LoadData2(f'~/PycharmProjects/pythonProject1/06.{option} Piotroski Score Results.csv')
     df2 = LoadData3(f'~/PycharmProjects/pythonProject1/01. {option} Income Statement.csv')
     df3=LoadData3(f'~/PycharmProjects/pythonProject1/02. {option} Balance Sheet.csv')
