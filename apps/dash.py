@@ -61,9 +61,11 @@ def app():
     with st.container():
         with col1:
             st.header(f'{option} Stock Open Prices')
-            stock_plot = px.line(x='Date', y='Open', data_frame=Data,width=1200)
-            fig = stock_plot.update_traces(line_color='lightgreen')
-            st.plotly_chart(fig)
+            #stock_plot = px.line(x='Date', y='Open', data_frame=Data,width=1200)
+            #fig = stock_plot.update_traces(line_color='lightgreen')
+            #st.plotly_chart(fig)
+
+            ################
         with col2:
             st.header(f'{option} Scoring Criteria')
             st.dataframe(df.style.highlight_max(color='lightgreen').applymap(highlight_cols, subset = df.iloc[2,1]),width=600,height=1500)
