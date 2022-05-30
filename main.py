@@ -90,7 +90,8 @@ for statement in url_list:
     else:
         final_df.to_csv(f'03. {stock} Cash Flow Statement.csv')
 
-####### Scrape the Yahoo Finance Site for stock price history for the selected Ticker
+####### Scrape the Yahoo Finance Site for stock price history for the selected Ticker#########################
+
 
 stock_url = 'https://query1.finance.yahoo.com/v7/finance/download/{}?period1={}&period2={}&interval={}&events={}'  # Acquires stock price history for the selected Ticker
 
@@ -139,7 +140,7 @@ stats_df.to_csv(f'05.{stock} Statistics.csv')  # write the dataframe to CSV
 ############### Create a multi-layred stock screen to dertemine company's financial strength
 
 
-##Importing Yahoo Finance module for the finacial items that were not able ti be scraped
+##Importing Yahoo Finance module for the finacial items that were not able to be scraped
 yf_bs = []
 yf_is = []
 yf_cf = []
@@ -257,7 +258,7 @@ fin_strength_df.to_csv(f'06.{stock} Piotroski Score Results.csv')
 finviz_url = f'https://finviz.com/quote.ashx?t={stock}'
 req = Request(url=finviz_url, headers={'user-agent': 'my-analysis'})
 response = urlopen(req)
-html = BeautifulSoup(response, 'html')
+html = BeautifulSoup(response, 'lxml')
 news_tables = {}
 news_table = html.find(id='news-table')
 news_tables[stock] = news_table
@@ -290,7 +291,7 @@ news_df.to_csv(f'07.{stock} Sentiment Analysis.csv')
 ############################
 # Visualization of Sentiment Analysis
 mean_df = news_df.groupby(['date']).mean()
-plt.plot(mean_df, color='blue')
+plt.plot(mean_df, color='lightgreen')
 plt.title(f'{stock} Mean Compound Score Over Time')
 plt.axhline(0, color='red')
 plt.savefig(f'08.{stock} Compound Score.png', format='png', dpi=200, bbox_inches='tight', orientation='landscape')

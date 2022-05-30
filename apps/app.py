@@ -1,5 +1,7 @@
 import base64
 
+import streamlit_authenticator
+import streamlit_authenticator as stauth
 import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
@@ -8,7 +10,7 @@ import yfinance as yf
 
 def app():
     st.title('S&P 500 App')
-
+    st.set_option('deprecation.showPyplotGlobalUse', False)
     # Web scraping of S&P 500 data
     #
     @st.cache
@@ -21,8 +23,9 @@ def app():
 
     df = load_data()
     sector = df.groupby('GICS Sector')
-
     # Sidebar - Sector selection
+    #auth=st.session_state['authenticator']
+    #auth.logout("Logout","sidebar")
     sorted_sector_unique = sorted(df['GICS Sector'].unique())
     selected_sector = st.sidebar.multiselect('Sector', sorted_sector_unique, sorted_sector_unique)
 

@@ -1,0 +1,14 @@
+beautifulsoup4==4.11.1
+matplotlib==3.5.1
+numpy==1.22.2
+pandas==1.4.1
+Plost==0.2.5
+plotly_express==0.4.1
+Pyrebase==3.0.27
+requests==2.11.1
+seaborn==0.11.2
+streamlit==1.8.1
+streamlit_authenticator==0.1.5
+vaderSentiment==3.3.2
+yahoo_fin==0.8.9.1
+yfinance==0.1.70

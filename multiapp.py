@@ -39,7 +39,15 @@ class MultiApp:
         })
 
     def run(self):
+        auth = st.session_state['authenticator']
+
+        col1, col2, col3 = st.columns([1, 6, 1])
         # app = st.sidebar.radio(
+        with st.container():
+            with col1 :
+               app= st.markdown('Finance Dashboard')
+            with col3 :
+                app = auth.logout("Logout")
         app = st.selectbox(
             'Navigation',
             self.apps,
