@@ -72,7 +72,7 @@ def app():
             #st.write(df.style.highlight_max(color='lightgreen').applymap(highlight_cols, subset = df.iloc[2,1]),height=15500)
     with st.container():
         with col11 :
-            TransposeBC(f'~/PycharmProjects/pythonProject1/02. {option} Balance Sheet.csv',1)
+            TransposeBC(f'02. {option} Balance Sheet.csv',1)
             data = pd.read_csv('out.csv')
             data.columns = ["Year", "Total Assets"]
             df = pd.DataFrame(data)
@@ -83,7 +83,7 @@ def app():
             st.plotly_chart(fig)
         with col12:
 
-            TransposeBC(f'~/PycharmProjects/pythonProject1/02. {option} Balance Sheet.csv', 9)
+            TransposeBC(f'02. {option} Balance Sheet.csv', 9)
             data = pd.read_csv('out.csv')
             data.columns = ["Year", "Total Debt"]
             df = pd.DataFrame(data)
@@ -104,7 +104,7 @@ def app():
             st.plotly_chart(fig)
     with st.container():
         with col11:
-            TransposeINS(f'~/PycharmProjects/pythonProject1/01. {option} Income Statement.csv', 1)
+            TransposeINS(f'01. {option} Income Statement.csv', 1)
             data = pd.read_csv('out.csv')
             data.columns = ["Year", "Total Revenue"]
             df = pd.DataFrame(data)
@@ -114,7 +114,7 @@ def app():
             fig = stock_plot.update_traces(line_color='lightgreen')
             st.plotly_chart(fig)
         with col12:
-            TransposeINS(f'~/PycharmProjects/pythonProject1/01. {option} Income Statement.csv', 16)
+            TransposeINS(f'01. {option} Income Statement.csv', 16)
             data = pd.read_csv('out.csv')
             data.columns = ["Year", "Total Expanses"]
             df = pd.DataFrame(data)
@@ -124,7 +124,7 @@ def app():
             fig = stock_plot.update_traces(line_color='Red')
             st.plotly_chart(fig)
         with col13:
-            TransposeINS(f'~/PycharmProjects/pythonProject1/01. {option} Income Statement.csv', 10)
+            TransposeINS(f'01. {option} Income Statement.csv', 10)
             data = pd.read_csv('out.csv')
             data.columns = ["Year", "Net Income "]
             df = pd.DataFrame(data)
