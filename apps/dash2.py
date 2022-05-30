@@ -10,5 +10,6 @@ def app():
     start = st.date_input('Start',value=pd.to_datetime('2022-01-01'))
     end = st.date_input('End',value=pd.to_datetime('today'))
     if len(dropdown)>0 :
+        st.write(end,start)
         df = yf.download(dropdown,start,end)['Adj Close']
         st.line_chart(df)
