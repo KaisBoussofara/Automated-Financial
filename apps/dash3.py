@@ -22,5 +22,6 @@ def app():
     with st.container():
         with col2:
             st.title(f'{option} news article headings')
+    with st.container():
         with col2:
             st.dataframe(data)
