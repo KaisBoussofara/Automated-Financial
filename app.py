@@ -34,6 +34,7 @@ if authentication_status:
     st.session_state['authenticator']=authenticator
     appli.add_app("Income Statement", dash.app)
     appli.add_app("Sentimental Analysis Compound Score", dash3.app)
+    appli.add_app("Income Statement", dash.app)
     #appli.add_app("S&P 500 Stock closing price", app.app)
 
 
