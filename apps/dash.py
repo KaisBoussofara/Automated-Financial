@@ -53,22 +53,22 @@ def app():
         ('CEG','ANSS','ETR','GE','HST'))
     col1,col2 = st.columns([3,1])
     col11, col12,col13 = st.columns(3)
-    #Data=LoadData(f'~/PycharmProjects/pythonProject1/04. {option} Stock Price - 5 Year Historical.csv')
-    #df = LoadData2(f'~/PycharmProjects/pythonProject1/06.{option} Piotroski Score Results.csv')
-    df2 = LoadData3(f'~/PycharmProjects/pythonProject1/01. {option} Income Statement.csv')
-    df3=LoadData3(f'~/PycharmProjects/pythonProject1/02. {option} Balance Sheet.csv')
+    Data=LoadData(f'04. {option} Stock Price - 5 Year Historical.csv')
+    df = LoadData2(f'06.{option} Piotroski Score Results.csv')
+    df2 = LoadData3(f'01. {option} Income Statement.csv')
+    df3=LoadData3(f'02. {option} Balance Sheet.csv')
     #stock_plot.show()
     with st.container():
         with col1:
             st.header(f'{option} Stock Open Prices')
-            #stock_plot = px.line(x='Date', y='Open', data_frame=Data,width=1200)
-            #fig = stock_plot.update_traces(line_color='lightgreen')
-            #st.plotly_chart(fig)
+            stock_plot = px.line(x='Date', y='Open', data_frame=Data,width=1200)
+            fig = stock_plot.update_traces(line_color='lightgreen')
+            st.plotly_chart(fig)
 
             ################
         with col2:
             st.header(f'{option} Scoring Criteria')
-            #st.dataframe(df.style.highlight_max(color='lightgreen').applymap(highlight_cols, subset = df.iloc[2,1]),width=600,height=1500)
+            st.dataframe(df.style.highlight_max(color='lightgreen').applymap(highlight_cols, subset = df.iloc[2,1]),width=600,height=1500)
             #st.write(df.style.highlight_max(color='lightgreen').applymap(highlight_cols, subset = df.iloc[2,1]),height=15500)
     with st.container():
         with col11 :
