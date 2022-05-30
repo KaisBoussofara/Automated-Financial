@@ -16,10 +16,7 @@ def app():
     col1, col2, col3 = st.columns([1, 6, 1])
     col21, col22, col13 = st.columns([1, 6, 1])
     data = LoadData3(f'07.{option} Sentiment Analysis.csv')
-    with st.container():
-        with col2 :
+    with col2 :
             st.image(f'08.{option} Compound Score.png',width=1200)
-    with st.container():
-        with col22:
-            st.title(f'{option} news article headings')
+            st.subheader(f'{option} news article headings')
             st.dataframe(data)
