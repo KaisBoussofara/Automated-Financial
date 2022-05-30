@@ -12,7 +12,7 @@ def LoadData3(fin):
 def app():
     option = st.selectbox(
         'Pick your assets',
-        ('ANSS', 'GE', 'ETR', 'CEG', 'HST'))
+        ('ANSS', 'ETR', 'CEG', 'HST'))
     col1, col2, col3 = st.columns([1, 6, 1])
     col21, col22, col13 = st.columns([1, 6, 1])
     data = LoadData3(f'07.{option} Sentiment Analysis.csv')
