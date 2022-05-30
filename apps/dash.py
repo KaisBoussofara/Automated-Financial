@@ -93,7 +93,7 @@ def app():
             fig = fig.update_traces(marker_color='Red')
             st.plotly_chart(fig)
         with col13:
-            TransposeINS(f'~/PycharmProjects/pythonProject1/01. {option} Income Statement.csv', 1)
+            TransposeINS(f'01. {option} Income Statement.csv', 1)
             data = pd.read_csv('out.csv')
             data.columns = ["Year", "Total Equity"]
             df = pd.DataFrame(data)
