@@ -1,4 +1,4 @@
-# Deepfake Image Authenticity & Financial Sentiment Project
+# Financial Sentiment Project
 
 ## Overview
 
